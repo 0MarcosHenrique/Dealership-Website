@@ -97,9 +97,9 @@ section {
                     height: 35px;
                     width: 120px;
                     text-transform:uppercase;
-                    border: 2px solid #6d5f0e;
+                    border: 2px solid #8a8c0c;
                     background-color: #491313;
-                    color: black;
+                    color: rgb(200, 200, 60);
                     cursor: pointer;
                     font-weight: bold;
                 }
@@ -108,12 +108,42 @@ section {
             
         }
     }
-}
 
-.arrows {
-     & button {
-        & img {
-            width:100px;
+
+    .arrows {
+         & button {
+            & img {
+                width:100px;
+            }
+         }
+    }
+
+    .indicators {
+        position:absolute ;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 200px;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 15px;
+
+        & .number {
+            font-size: 5em;
         }
-     }
+
+        & ul {
+            display: flex;
+            gap: 10px;
+
+            & li {
+                width: 50px;
+                height: 5px;
+                background-color: #491313;
+                border-radius: 5px;
+            }
+        }
+    }
 }
