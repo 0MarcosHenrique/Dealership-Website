@@ -87,25 +87,26 @@ section {
                 }
 
                 & .description {
+                    margin-top: 20px;
                     color: #d9d9d9;
-                    font-size: 12px;
+                    font-size: 13px;
                     text-align:right;
                     line-height: 2em;
-                    max-width: 300px;
+                    max-width: 500px;
 
                 }
 
                 & .information {
                     border-radius: 30px;
-                    height: 35px;
-                    width: 120px;
+                    height: 70px;
+                    width: 150px;
                     text-transform:uppercase;
                     border: 2px solid #8a8c0c;
                     background-color: #491313;
                     color: rgb(200, 200, 60);
                     cursor: pointer;
                     font-weight: bold;
-                    font-size: em;
+                    font-size: 2em;
                     font-family: "League Gothic", sans-serif;
                 }
 
@@ -174,7 +175,7 @@ section {
 
         & .number {
             font-size: 3em;
-            font-family: "League Gothic", sans-serif;-
+            font-family: "League Gothic", sans-serif;
         }
 
         & ul {
@@ -192,6 +193,49 @@ section {
             & .active {
                 background-color: #fff;
                 
+            }
+        }
+    }
+}
+
+
+section {
+
+    & .list {
+
+        & .item {
+            transform: translateX(100vw);
+            transition: 0.5s;
+
+            & .car-img {
+                & img{
+                    transform: rotate(0);
+                    transition: 0.5s;
+                    transition-delay: 0.3s;
+
+                }
+            }
+
+            & .content {
+
+                & .car-information, h2, .description, .information {
+                    transform: translateX(200px);
+                    transition: 0.7s;
+                    transition-delay: 0.3s;
+
+                }
+
+                & h2 {
+                    transition-delay: 0.5s;
+                }
+
+                & .description {
+                    transition-delay: 0.7s;
+                }
+
+                & .information {
+                    transition-delay: 0.9s;
+                }
             }
         }
     }
