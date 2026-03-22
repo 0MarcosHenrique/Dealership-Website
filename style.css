@@ -5,8 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     list-style: none;
-    font-family: 'Courier Prime', Courier, monospace;
-    font-family: 'League Gothic', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -82,15 +81,16 @@ section {
                 }
 
                 & h2 {
-                    font-size: 4em;
-                    line-height: 1em;
+                    font-size: 6em;
+                    
+                    font-family: "League Gothic", sans-serif;
                 }
 
                 & .description {
                     color: #d9d9d9;
                     font-size: 12px;
                     text-align:right;
-                    line-height: 1.3em;
+                    line-height: 2em;
                     max-width: 300px;
 
                 }
@@ -105,6 +105,8 @@ section {
                     color: rgb(200, 200, 60);
                     cursor: pointer;
                     font-weight: bold;
+                    font-size: em;
+                    font-family: "League Gothic", sans-serif;
                 }
 
             }
@@ -172,6 +174,7 @@ section {
 
         & .number {
             font-size: 3em;
+            font-family: "League Gothic", sans-serif;-
         }
 
         & ul {
